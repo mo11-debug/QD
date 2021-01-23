@@ -222,18 +222,13 @@ function fn(name){
 
 ```
 function foo(i){
-    var a = 'hello'
-    var b = function privateB(){
-        
-    }
-    function c(){
-        
-    }
-}
-foo(22)
+    console.log(i)
+    console.log(global)
+    console.log(this)
+}//先输出i,再输出global,再输出this
 ```
 
-执行上下文指执行环境，比如入参i不同的时候，输出a结果也不同，this的指向也不同。作用域链，链接另一个执行环境的指针。
+执行上下文指执行环境，比如入参i不同的时候，输出i结果也不同，this的指向也不同。作用域链，链接另一个执行环境的指针。
 
 问：函数提升的意思可以理解为改变执行顺序提到前面？
 
